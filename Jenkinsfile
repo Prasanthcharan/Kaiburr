@@ -48,7 +48,7 @@ stage('k8s') {
                 script {
 		  dir("helm")
 			{
-                    sh """cd kaiburr && export KUBECONFIG=/home/ec2-user/.kube/config && helm upgrade -i kaiburr """
+                    sh """cd kaiburr && export KUBECONFIG=/home/ec2-user/.kube/config && helm upgrade -i kaiburr . """
 			}	
                     
                 }
