@@ -18,4 +18,6 @@ terraform plan
 terraform apply
 ```
 
+##k8s cluster setup
+
 
