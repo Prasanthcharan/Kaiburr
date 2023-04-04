@@ -6,7 +6,7 @@
  
 ![image](https://user-images.githubusercontent.com/87360254/229893905-56b416d0-9b7a-40fa-8fe2-b8de9e8930d2.png)
 
-##terraform
+##terraform folder
 under terraform folder - to launcg ec2 instances and ansible playbook to install mongodb 
 
 before running below terraform commands, aws configure has to setup. terraform launch ec2 instance and copy mongodb playbooks to ec2 instance and install mongodb through ansilbe playbooks
@@ -25,5 +25,9 @@ eks-cluster.yaml file is used to launch eks cluster and nake sure eksctl install
 ```shell
 eksctl create cluster -f eks-cluster.yaml
 ```
+
+##helm folder
+
+helm chart for application hackathon-starter
 
 
