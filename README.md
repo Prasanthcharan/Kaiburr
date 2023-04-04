@@ -8,6 +8,7 @@
 
 ##terraform
 under terraform folder - to launcg ec2 instances and ansible playbook to install mongodb 
+before running below terraform commands, aws configure has to setup
 ```shell
 git clone https://github.com/Prasanthcharan/kaiburr.git
 cd terraform
