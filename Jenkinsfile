@@ -46,7 +46,7 @@ stage('Trivy Scan') {
 stage('k8s') {
             steps {
                 script {
-		  dir("helm deploy")
+		  dir("helm")
 			{
                     sh """cd kaiburr && export KUBECONFIG=/home/ec2-user/.kube/config && helm upgrade -i kaiburr """
 			}	
