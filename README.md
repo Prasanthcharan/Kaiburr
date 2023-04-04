@@ -25,9 +25,15 @@ eks-cluster.yaml file is used to launch eks cluster and nake sure eksctl install
 ```shell
 eksctl create cluster -f eks-cluster.yaml
 ```
+referlinks:
+https://eksctl.io/usage/creating-and-managing-clusters/
 
 ##helm folder
 
 helm chart for application hackathon-starter
+
+##argocd setup
+```shell
+
 
 
