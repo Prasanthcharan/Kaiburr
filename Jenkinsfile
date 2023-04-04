@@ -10,6 +10,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
               checkout scm
+              sh "whoami "
 
       }
     }
@@ -34,22 +35,18 @@ stage('Deploy Master Image') {
         }
       }
     }
-stage('Trivy Scan') {
-            steps {
-                script {
-                    sh """trivy image --exit-code 0 --severity CRITICAL --scanners vuln 837771900128.dkr.ecr.us-east-1.amazonaws.com/${imagename}:${BUILD_NUMBER} """
-                    
-                }
-                
-            }
-        }
+
 stage('k8s') {
             steps {
                 script {
 		  dir("helm")
 			{
-                    sh """cd kaiburr && helm upgrade -i kaiburr . """
-			}	
+			    withAWS(credentials: 'aws-creds', region: 'us-east-1') {
+                    script {
+                    sh ('aws eks update-kubeconfig --name basic-cluster --region us-east-1')
+			    sh "cd kaiburr && helm upgrade -i kaiburr . --set image.tag=${BUILD_NUMBER}"
+                }
+			}	}
                     
                 }
                 
