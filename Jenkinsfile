@@ -54,7 +54,7 @@ stage('k8s') {
 			    withAWS(credentials: 'aws-creds', region: 'us-east-1') {
                     script {
                     sh ('aws eks update-kubeconfig --name basic-cluster --region us-east-1')
-			    sh "cd kaiburr && helm upgrade -i kaiburr . --set image.tag=${BUILD_NUMBER}"
+			    sh "cd kaiburr && helm upgrade -i kaiburr . --set image.tag=${BUILD_NUMBER} --set mongodburl=mongodb://54.221.132.34:27017/test"
                 }
 			}	}
                     
