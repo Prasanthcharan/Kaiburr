@@ -5,7 +5,7 @@
 replicaCount: 1
 mongodburl: mongodb://54.221.132.34:27017/test
 image:
-  repository: public.ecr.aws/q5x7v6s6/devops
+  repository: "837771900128.dkr.ecr.us-east-1.amazonaws.com/devops"
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
