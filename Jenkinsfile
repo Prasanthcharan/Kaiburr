@@ -3,13 +3,13 @@ pipeline {
     imagename = "devops"
     ecrurl = "https://837771900128.dkr.ecr.us-east-1.amazonaws.com"
     ecrcredentials = "ecr:us-east-1:aws-creds"
-    dockerImage = ''
+
   } 
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-              sh "git clone https://github.com/sahat/hackathon-starter.git"
+              checkout scm
 
       }
     }
