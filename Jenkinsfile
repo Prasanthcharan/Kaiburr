@@ -49,6 +49,7 @@ stage('k8s') {
 		  dir("helm deploy")
 			{
                     sh """cd kaiburr && export KUBECONFIG=/home/ec2-user/.kube/config && helm upgrade -i kaiburr """
+			}	
                     
                 }
                 
