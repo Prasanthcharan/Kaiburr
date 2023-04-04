@@ -1,9 +1,9 @@
 # kaiburr task related urls
-[jenkins url](http://44.201.183.75:8080/)
+[jenkins url](http://44.201.183.75:8080/)\
 
-[hackathon-starter application](http://a4ae8868c0af54f27b54fa7ad54d3a23-1069947587.us-east-1.elb.amazonaws.com:8080/)
+[hackathon-starter application](http://a4ae8868c0af54f27b54fa7ad54d3a23-1069947587.us-east-1.elb.amazonaws.com:8080/)\
 
-[argocd url](a9d4ff07fa1d548ed942938465f30564-152749685.us-east-1.elb.amazonaws.com)
+[argocd url](a9d4ff07fa1d548ed942938465f30564-152749685.us-east-1.elb.amazonaws.com)\
 
 
 ##jenkins pipeline stages 
