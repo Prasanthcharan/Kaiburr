@@ -36,6 +36,16 @@ stage('Deploy Master Image') {
       }
     }
 
+stage('Trivy Scan') {
+            steps {
+                script {
+                    sh """trivy image --exit-code 0 --severity CRITICAL --scanners vuln 837771900128.dkr.ecr.us-east-1.amazonaws.com/${imagename}:${BUILD_NUMBER} """
+                    
+                }
+                
+            }
+        }
+
 stage('k8s') {
             steps {
                 script {
