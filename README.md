@@ -20,4 +20,10 @@ terraform apply
 
 ##k8s cluster setup
 
+eks-cluster.yaml file is used to launch eks cluster and nake sure eksctl installed from where you run below commands
+
+```shell
+eksctl create cluster -f eks-cluster.yaml
+```
+
 
