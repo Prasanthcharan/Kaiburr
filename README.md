@@ -8,7 +8,8 @@
 
 ##terraform
 under terraform folder - to launcg ec2 instances and ansible playbook to install mongodb 
-before running below terraform commands, aws configure has to setup
+
+before running below terraform commands, aws configure has to setup. terraform launch ec2 instance and copy mongodb playbooks to ec2 instance and install mongodb through ansilbe playbooks
 ```shell
 git clone https://github.com/Prasanthcharan/kaiburr.git
 cd terraform
