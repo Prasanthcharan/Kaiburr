@@ -8,11 +8,12 @@
 
 ##terraform
 under terraform folder - to launcg ec2 instances and ansible playbook to install mongodb 
-#sh
+'''shell
 git clone https://github.com/Prasanthcharan/kaiburr.git
 cd terraform
 terraform init
 terraform plan
 terraform apply
+'''
 
 
