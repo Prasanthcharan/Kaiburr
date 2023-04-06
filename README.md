@@ -7,7 +7,7 @@
 
 
 ##jenkins pipeline stages 
-[jenkins ul](http://44.201.183.75:8080/job/devops-multibranch/)
+[jenkins ul](http://http://18.206.225.123:8080/job/devops-multibranch/)
  
 ![image](https://user-images.githubusercontent.com/87360254/229893905-56b416d0-9b7a-40fa-8fe2-b8de9e8930d2.png)
 
