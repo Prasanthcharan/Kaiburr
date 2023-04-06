@@ -1,5 +1,5 @@
 # kaiburr task related urls
-[jenkins url](http://44.201.183.75:8080/)\
+[jenkins url](http://18.206.225.123:8080/)\
 
 [hackathon-starter application](http://a4ae8868c0af54f27b54fa7ad54d3a23-1069947587.us-east-1.elb.amazonaws.com:8080/)\
 
